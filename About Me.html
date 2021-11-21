@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-182101991-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-182101991-1');
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="web background.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Sophia Li's Webpage ^o^</title>
+</head>
+<body>
+    <style>
+        label {
+            display: block;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        input,
+        label {
+            margin: .4rem 0;
+        }
+    </style>
+    <label for="site-search"></label>
+    <form action="http://individual.utoronto.ca/sophiaxyli"/>
+    <input type="search" id="site-search" name="q"
+           placeholder="Search the site...">
+    <button> Search</button>
+
+    <div id="container">
+        <div id="header">
+            <div class="menu">
+                <a href="http://www.utoronto.ca" target="_blank">
+                    <img src="UofT-logo-2.png" width="190" height="65" style="vertical-align:middle;margin:0px 20px"
+                         alt="University of Toronto" title="University of Toronto Mainpage">
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Me.html">About Me</a></li>
+                    <li><a href="MHI1001 Resources.html">MHI1001 Resources</a></li>
+                    <li><a href="Contact Me.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="https://ihpme.utoronto.ca/" target="_blank">
+                        <img src="ihpme building-2.jpg" width="1000" height="300"
+                             alt="IHPME" title="IHPME Mainpage">
+                    </a>
+                    <div class="text">IHPME Mainpage</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="doggies.jpg" width="700" height="300" style="padding-left: 150px">
+                    <div class="text">Doggies!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="ACNH-1.jpg" width="700" height="300" style="padding-left: 150px">
+                    <div class="text">ACNH cures my soul.</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+        <div id="body">
+            <p>
+                <img src="head shot_Sophia Li.jpg" width="280" height="280" alt="profile pic" align="left" style="padding-right: 30px;
+                 padding-bottom: 60px">
+                <h2>Hi there, My name is Sophia Xueying Li. &#128578;</h2>
+                Sophia earned an Honours BSc degree in Pharmacology and Biomedical Toxicology from University
+                of Toronto with a passion in health informatics and health research. She is currently pursuing
+                a master's degree in Health Informatics at the Institute of Health Policy, Management and Evaluation,
+                Dalla Lana School of Public Health at UofT. The MHI program is an AI-related master’s program recognized
+                by <a href="https://vectorinstitute.ai/" target="_blank"><b>The Vector Institute</b>. </a>
+                <br>
+                <br>
+                Her current professional experience involves in working as a Research Assistant at the Centre for Addiction and Mental Health
+                building and validating various statistical models to evaluate study treatments. With her training in Health Informatics,
+                she has developed a passion in advanced data analytics to provide data-driven recommendations and solutions to improve healthcare.
+                <br>
+                <br>
+                Besides academics and work, she has been mentoring youth for many years. She is also heavily involved in community volunteering
+                with a leadership role.
+            </p>
+            <br>
+            <style>
+                h3 {
+                    text-align: center;
+                }
+            </style>
+
+
+            <style>
+
+
+                .container {
+                    width: 61%;
+                    padding-left: 200px
+                }
+
+                .skills {
+                    text-align: right;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: #76323F;
+                }
+
+                .curiosity {
+                    width: 100%;
+                    background-color: #C09F80;
+                }
+
+                .teamwork {
+                    width: 100%;
+                    background-color: #C09F80;
+                }
+
+                .problem-solving {
+                    width: 90%;
+                    background-color: #C09F80;
+                }
+
+                .critical-thinking {
+                    width: 90%;
+                    background-color: #C09F80;
+                }
+
+                .project-management {
+                    width: 90%;
+                    background-color: #C09F80;
+                }
+            </style>
+
+
+            <h3>Transferable Skills</h3>
+            <p style="text-indent:200px">Passionate about and Have a curiosity for learning new things </p>
+            <div class="container">
+                <div class="skills curiosity">100%</div>
+            </div>
+
+            <p style="text-indent:200px">Teamwork</p>
+            <div class="container">
+                <div class="skills teamwork">100%</div>
+            </div>
+
+            <p style="text-indent:200px">Problem Solving</p>
+            <div class="container">
+                <div class="skills problem-solving">90%</div>
+            </div>
+
+            <p style="text-indent:200px">Critical Thinking</p>
+            <div class="container">
+                <div class="skills critical-thinking">90%</div>
+            </div>
+
+            <p style="text-indent:200px">Project Management</p>
+            <div class="container">
+                <div class="skills project-management">90%</div>
+            </div>
+
+
+            <br>
+            <br>
+
+            <h3>Below are some of the video clips I made in spare time.</h3>
+            <iframe width="600" height="400" style="padding-left:200px" src="https://www.youtube.com/embed/d82FABl0Q3Q" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <br>
+          
+
+
+            <script type="text/javascript">
+
+                /***********************************************
+                * Display time of last visit script- by JavaScriptKit.com
+                * This notice MUST stay intact for use
+                * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
+                ***********************************************/
+
+                var days = 730; // days until cookie expires = 2 years.
+                var lastvisit = new Object();
+                var firstvisitmsg = "This is your first visit to this page. Welcome!";
+                lastvisit.subsequentvisitmsg = "Welcome back visitor! Your last visit was on <b>[displaydate]</b>";
+
+                lastvisit.getCookie = function (Name) {
+                    var re = new RegExp(Name + "=[^;]+", "i");
+                    if (document.cookie.match(re))
+                        return document.cookie.match(re)[0].split("=")[1];
+                    return '';
+                }
+
+                lastvisit.setCookie = function (name, value, days) {
+                    var expireDate = new Date();
+
+                    var expstring = expireDate.setDate(expireDate.getDate() + parseInt(days));
+                    document.cookie = name + "=" + value + "; expires=" + expireDate.toGMTString() + "; path=/";
+                }
+
+                lastvisit.showmessage = function () {
+                    var wh = new Date();
+                    if (lastvisit.getCookie("visitc") == "") {
+                        lastvisit.setCookie("visitc", wh, days);
+                        document.write(firstvisitmsg);
+                    }
+
+                    else {
+                        var lv = lastvisit.getCookie("visitc");
+                        var lvp = Date.parse(lv);
+                        var now = new Date();
+                        now.setTime(lvp);
+                        var day = new Array("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat");
+                        var month = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+                        var dd = now.getDate();
+                        var dy = now.getDay();
+                        dy = day[dy];
+                        var mn = now.getMonth();
+                        mn = month[mn];
+                        yy = now.getFullYear();
+                        var hh = now.getHours();
+                        var ampm = "AM";
+                        if (hh >= 12) { ampm = "PM" }
+                        if (hh > 12) { hh = hh - 12 };
+                        if (hh == 0) { hh = 12 }
+                        if (hh < 10) { hh = "0" + hh };
+                        var mins = now.getMinutes();
+                        if (mins < 10) { mins = "0" + mins }
+                        var secs = now.getSeconds();
+                        if (secs < 10) { secs = "0" + secs }
+                        var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+                        document.write(lastvisit.subsequentvisitmsg.replace("\[displaydate\]", dispDate))
+                    }
+
+                    lastvisit.setCookie("visitc", wh, days);
+
+                }
+
+                lastvisit.showmessage();
+
+            </script>
+        </div>
+        <div id="footer">
+            &copy; 2020-2021 - Sophia Li, <a href="https://ihpme.utoronto.ca/academics/pp/mhi/handbook/course-descriptions/#MHI1001"
+                                        target="_blank">University of Toronto MHI1001</a>
+        </div>
+    </div>
+</body>
+</html>
